@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,13 @@ namespace PracticalWork4_Smolin_Koskina
             InitializeComponent();
         }
 
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            var result = MessageBox.Show("Вы уверены, что хотите выйти из приложения?", "Exit confirm", MessageBoxButton.OKCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
+
+            if (result == MessageBoxResult.Cancel) 
+                e.Cancel = true;
+        }
         private void Page1Button_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new Page1());
