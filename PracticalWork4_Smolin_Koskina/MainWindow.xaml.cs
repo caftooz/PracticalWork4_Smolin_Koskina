@@ -28,7 +28,7 @@ namespace PracticalWork4_Smolin_Koskina
 
         protected override void OnClosing(CancelEventArgs e)
         {
-            var result = MessageBox.Show("Вы уверены, что хотите выйти из приложения?", "Exit confirm", MessageBoxButton.OKCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
+            var result = MessageBox.Show("Вы уверены, что хотите выйти из приложения?", "Exit confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
 
             if (result == MessageBoxResult.Cancel) 
                 e.Cancel = true;
