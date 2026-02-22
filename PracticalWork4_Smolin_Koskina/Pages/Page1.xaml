@@ -17,15 +17,15 @@
                 <StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="x" Width="35" TextAlignment="Center"/>
-                        <TextBox x:Name="XTextBox" MinWidth="120" PreviewTextInput="XTextBox_PreviewTextInput" PreviewKeyDown="XTextBox_PreviewKeyDown"/>
+                        <TextBox ToolTip="Поле для ввода значения X" x:Name="XTextBox" MinWidth="120" PreviewTextInput="XTextBox_PreviewTextInput" PreviewKeyDown="XTextBox_PreviewKeyDown"/>
                     </StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="y" Width="35" TextAlignment="Center"/>
-                        <TextBox x:Name="YTextBox" MinWidth="120" PreviewTextInput="YTextBox_PreviewTextInput" PreviewKeyDown="YTextBox_PreviewKeyDown"/>
+                        <TextBox ToolTip="Поле для ввода значения Y" x:Name="YTextBox" MinWidth="120" PreviewTextInput="YTextBox_PreviewTextInput" PreviewKeyDown="YTextBox_PreviewKeyDown"/>
                     </StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="z" Width="35" TextAlignment="Center"/>
-                        <TextBox x:Name="ZTextBox" MinWidth="120" PreviewTextInput="ZTextBox_PreviewTextInput" PreviewKeyDown="ZTextBox_PreviewKeyDown"/>
+                        <TextBox ToolTip="Поле для ввода значения Z" x:Name="ZTextBox" MinWidth="120" PreviewTextInput="ZTextBox_PreviewTextInput" PreviewKeyDown="ZTextBox_PreviewKeyDown"/>
                     </StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="Ответ" Width="35" TextAlignment="Center"/>
@@ -33,10 +33,10 @@
                     </StackPanel>
                 </StackPanel>
                 <Grid>
-                    <Button Margin="5" 
+                    <Button Margin="5" ToolTip="Вычислить функцию на основе параметров x, y, z"
                     x:Name="Calculate" Content="Вычислить" Height="40"
                     VerticalAlignment="Top" Click="Calculate_Click"/>
-                    <Button Margin="5" 
+                    <Button Margin="5" ToolTip="Очистить все поля от значений"
                     x:Name="Clear" Content="Очистить" Height="40"
                     VerticalAlignment="Bottom" Click="Clear_Click"/>
                 </Grid>

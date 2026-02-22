@@ -75,7 +75,7 @@ namespace PracticalWork4_Smolin_Koskina
             }
             if (String.IsNullOrEmpty(BTextBox.Text))
             {
-                Core.Warning("Не задано значение 'Y'!");
+                Core.Warning("Не задано значение 'B'!");
                 return false;
             }
 
@@ -102,7 +102,7 @@ namespace PracticalWork4_Smolin_Koskina
             }
             if (!(Double.TryParse(bString, out double resultY)))
             {
-                Core.Warning("Не удалось преобразовать ввод 'Y' в число!");
+                Core.Warning("Не удалось преобразовать ввод 'B' в число!");
                 parsingResult = false;
             }
             x = resultX; b = resultY;

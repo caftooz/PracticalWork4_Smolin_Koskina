@@ -27,21 +27,21 @@
                 <StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="x" Width="35" TextAlignment="Center"/>
-                        <TextBox x:Name="XTextBox" MinWidth="120" PreviewTextInput="XTextBox_PreviewTextInput" PreviewKeyDown="XTextBox_PreviewKeyDown"/>
+                        <TextBox ToolTip="Поле для ввода значения X" x:Name="XTextBox" MinWidth="120" PreviewTextInput="XTextBox_PreviewTextInput" PreviewKeyDown="XTextBox_PreviewKeyDown"/>
                     </StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="b" Width="35" TextAlignment="Center"/>
-                        <TextBox x:Name="BTextBox" MinWidth="120" PreviewTextInput="BTextBox_PreviewTextInput" PreviewKeyDown="BTextBox_PreviewKeyDown"/>
+                        <TextBox ToolTip="Поле для ввода значения B" x:Name="BTextBox" MinWidth="120" PreviewTextInput="BTextBox_PreviewTextInput" PreviewKeyDown="BTextBox_PreviewKeyDown"/>
                     </StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
                         <TextBlock Text="Ответ" Width="35" TextAlignment="Center"/>
                         <TextBox x:Name="AnswerTextBox" MinWidth="120" IsEnabled="False"/>
                     </StackPanel>
-                    <Button Margin="5" 
+                    <Button Margin="5" ToolTip="Вычислить функцию на основе параметров x, b и построить график функции"
                             x:Name="Calculate" Content="Вычислить" Height="25"
                             VerticalAlignment="Top" Click="Calculate_Click"/>
-                    <Button Margin="5" 
-                            x:Name="Clear" Content="Очистить" Height="25"
+                    <Button Margin="5"  ToolTip="Очистить все поля от значений"
+                            x:Name="Clear" Content="Очистить" Height="25" 
                             VerticalAlignment="Bottom" Click="Clear_Click"/>
                 </StackPanel>
                 <Grid>
