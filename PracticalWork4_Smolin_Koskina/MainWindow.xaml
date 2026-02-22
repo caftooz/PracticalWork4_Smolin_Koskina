@@ -6,8 +6,18 @@
         xmlns:local="clr-namespace:PracticalWork4_Smolin_Koskina"
         mc:Ignorable="d"
         xmlns:charts="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
-        Title="Практическая работа 4 Смолин Коскина" Height="450" Width="800">
+        Title="Практическая работа 4 Смолин Коскина" Height="600" Width="800">
     <Grid>
-        <Frame Source="/Pages/Page3.xaml"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="30" Width="100" Margin="5" x:Name="Page1Button" Content="Page1" Click="Page1Button_Click"/>
+            <Button Height="30" Width="100" Margin="5" x:Name="Page2Button" Content="Page2" Click="Page2Button_Click"/>
+            <Button Height="30" Width="100" Margin="5" x:Name="Page3Button" Content="Page3" Click="Page3Button_Click"/>
+        </StackPanel>
+            
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

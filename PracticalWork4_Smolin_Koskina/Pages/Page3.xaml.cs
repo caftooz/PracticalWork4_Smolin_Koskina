@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PracticalWork4_Smolin_Koskina.Pages
+namespace PracticalWork4_Smolin_Koskina
 {
     /// <summary>
     /// Логика взаимодействия для Page3.xaml

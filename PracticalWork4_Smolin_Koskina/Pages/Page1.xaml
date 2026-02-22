@@ -10,7 +10,9 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="/Images/function1.png" Height="100" Margin="10"/>
+            <Border BorderBrush="Black" BorderThickness="3" Margin="5">
+                <Image Source="/Images/function1.png" Height="100" Margin="10"/>
+            </Border>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel>
                     <StackPanel Margin="5" Orientation="Horizontal">
@@ -32,11 +34,11 @@
                 </StackPanel>
                 <Grid>
                     <Button Margin="5" 
-                            x:Name="Calculate" Content="Вычислить" Height="40"
-                            VerticalAlignment="Top" Click="Calculate_Click"/>
+                    x:Name="Calculate" Content="Вычислить" Height="40"
+                    VerticalAlignment="Top" Click="Calculate_Click"/>
                     <Button Margin="5" 
-                            x:Name="Clear" Content="Очистить" Height="40"
-                            VerticalAlignment="Bottom" Click="Clear_Click"/>
+                    x:Name="Clear" Content="Очистить" Height="40"
+                    VerticalAlignment="Bottom" Click="Clear_Click"/>
                 </Grid>
             </StackPanel>
         </StackPanel>

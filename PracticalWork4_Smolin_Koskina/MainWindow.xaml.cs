@@ -24,5 +24,20 @@ namespace PracticalWork4_Smolin_Koskina
         {
             InitializeComponent();
         }
+
+        private void Page1Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Page1());
+        }
+
+        private void Page2Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Page2());
+        }
+
+        private void Page3Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Page3());
+        }
     }
 }
