@@ -1,0 +1,52 @@
+﻿<Page x:Class="PracticalWork4_Smolin_Koskina.Pages.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PracticalWork4_Smolin_Koskina.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="/Images/function2.png" Height="100" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal">
+                        <TextBlock Text="x" Width="35" TextAlignment="Center"/>
+                        <TextBox x:Name="XTextBox" MinWidth="120" PreviewTextInput="XTextBox_PreviewTextInput" PreviewKeyDown="XTextBox_PreviewKeyDown"/>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal">
+                        <TextBlock Text="y" Width="35" TextAlignment="Center"/>
+                        <TextBox x:Name="YTextBox" MinWidth="120" PreviewTextInput="YTextBox_PreviewTextInput" PreviewKeyDown="YTextBox_PreviewKeyDown"/>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal">
+                        <TextBlock Text="f(x)" Width="35" TextAlignment="Center"/>
+
+                        <StackPanel HorizontalAlignment="Right">
+                            <RadioButton x:Name="shXRadioButton" MinWidth="120" Height="15" VerticalContentAlignment="Center" 
+                                     Content="sh(x)" Checked="shXRadioButton_Checked"/>
+                            <RadioButton x:Name="x2RadioButton" MinWidth="120" Height="15" VerticalContentAlignment="Center" 
+                                     Content="x^2" Checked="x2RadioButton_Checked"/>
+                            <RadioButton x:Name="xeRadioButton" MinWidth="120" Height="15" VerticalContentAlignment="Center" 
+                                     Content="x^e" Checked="xeRadioButton_Checked"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal">
+                        <TextBlock Text="Ответ" Width="35" TextAlignment="Center"/>
+                        <TextBox x:Name="AnswerTextBox" MinWidth="120" IsEnabled="False"/>
+                    </StackPanel>
+                </StackPanel>
+                <Grid>
+                    <Button Margin="5" 
+                            x:Name="Calculate" Content="Вычислить" Height="40"
+                            VerticalAlignment="Top" Click="Calculate_Click"/>
+                    <Button Margin="5" 
+                            x:Name="Clear" Content="Очистить" Height="40"
+                            VerticalAlignment="Bottom" Click="Clear_Click"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
