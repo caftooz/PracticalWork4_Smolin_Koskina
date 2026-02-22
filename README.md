@@ -28,7 +28,7 @@
 ---
 ## Технологии
 - WPF (.NET Framework) — пользовательский интерфейс
-- Frame Navigation — навигация по страницам (Назад/Вперёд)
+- Frame Navigation — навигация по страницам
 - DataVisualization — построение графика функций
 
 ---
@@ -38,7 +38,7 @@ PracticalWork4_Smolin_Koskina/
 ├─ Pages/
 │ ├─ Page1.xaml
 │ ├─ Page2.xaml
-│ ├─ Page3.xaml
+│ └─ Page3.xaml
 ├─ Images/
 │ ├─ function1.png
 │ ├─ function2.png
