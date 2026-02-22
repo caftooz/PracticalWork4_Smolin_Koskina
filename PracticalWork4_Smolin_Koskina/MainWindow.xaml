@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticalWork4_Smolin_Koskina"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:charts="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        Title="Практическая работа 4 Смолин Коскина" Height="450" Width="800">
     <Grid>
-        <Frame Source="/Pages/Page2.xaml"/>
+        <Frame Source="/Pages/Page3.xaml"/>
     </Grid>
 </Window>

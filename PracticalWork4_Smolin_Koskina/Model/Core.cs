@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Xml.Serialization;
 
 namespace PracticalWork4_Smolin_Koskina
 {
@@ -35,6 +36,14 @@ namespace PracticalWork4_Smolin_Koskina
 
             return result;
         }
+        public static double Function3(double x, double b)
+        {
+            double result;
+            var dividend = Math.Pow(Math.Abs(x - b), 1d / 2d);
+            var divisor = Math.Pow(Math.Abs(Math.Pow(b, 3) - Math.Pow(x, 3)), 3d / 2d);
+            result = dividend / divisor + Math.Log(Math.Abs(x - b));
+            return result;
+        }
 
         public static void Error(string message)
         {
@@ -48,8 +57,14 @@ namespace PracticalWork4_Smolin_Koskina
         public static void CheckIsNumeric(TextBox sender, TextCompositionEventArgs e)
         {
             double result;
+
+            bool minus = sender.Text.Length == 0 && e.Text.Equals("-");
+
             bool dot = sender.Text.IndexOf(",") < 0 && e.Text.Equals(",") && sender.Text.Length > 0;
-            if (!(Double.TryParse(e.Text, out result) || dot))
+
+            bool minusNotAtStart = sender.Text.Length > 0 && e.Text.Equals("-");
+
+            if (!(Double.TryParse(e.Text, out result) || dot || minus) || minusNotAtStart)
             {
                 e.Handled = true;
             }
